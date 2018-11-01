@@ -3,6 +3,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Navbar from './components/layoutComponents/Navbar';
 import Dashboard from './components/dashboardComponents/Dashboard';
+import ProjectDetails from './components/projectsComponents/ProjectDetails';
+import SignIn from './components/authenticationComponents/SignIn';
+import SignUp from './components/authenticationComponents/SignUp';
 
 class App extends Component {
   render() {
@@ -11,7 +14,10 @@ class App extends Component {
         <div className="App">
           <Navbar />
           <Switch>
-              <Route path='/' component={Dashboard} />
+              <Route exact path='/' component={Dashboard} />
+              <Route path='/project/:id' component={ProjectDetails} />
+              <Route path='/signin' component={SignIn} />
+              <Route path='/signup' component={SignUp} />
           </Switch>
         </div>
       </BrowserRouter>
