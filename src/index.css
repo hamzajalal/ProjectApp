@@ -1,3 +1,6 @@
+html {
+  min-height: 100%;
+}
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +9,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url(/images/background.jpeg);
+  background-size: 100%;
+  background-position: center;
+  min-height: 100%;
+}
+form {
+  padding: 20px;
+  margin-top: 60px;
+}
+form button, form h5 {
+  margin: 20px 0;
+}
+input[type=text]:not(.browser-default):focus:not([randomly]),
+input[type=email]:not(.browser-default):focus:not([randomly]),
+input[type=password]:not(.browser-default):focus:not([randomly]),
+textarea.materialize-textarea:focus:not([randomly]){
+  border-color: #42adf4;
+  box-shadow: none;
 }
 
 code {
