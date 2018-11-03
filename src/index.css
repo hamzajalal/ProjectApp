@@ -9,10 +9,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(/images/background.jpeg);
-  background-size: 100%;
+  background: url(/images/background1.jpg);
+  background-size: cover;
   background-position: center;
   min-height: 100%;
+  
 }
 form {
   padding: 20px;
