@@ -14,12 +14,12 @@ class SignUp extends Component {
     }
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log(this.state)
+        console.log(this.state);
     }
   render() {
     return (
       <div className="container">
-        <form onSubmit={this.handleSubmit} className="white">
+        <form className="white" onSubmit={this.handleSubmit} >
             <h5 className="grey-text text-darken-3">Sign Up</h5>
             <div className="input-field">
                 <label htmlFor="email">Email</label>
